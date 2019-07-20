@@ -1,0 +1,64 @@
+ext {
+
+    plugins = [
+            application: "com.android.application",
+            library    : "com.android.library"
+    ]
+
+    android = [
+            compileSdkVersion: 28,
+            minSdkVersion    : 19,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "0.0.1"
+    ]
+
+    dependVersion = [
+            androidSupport           : '28.0.0',
+            constraint               : '1.1.3',
+            kotlin                   : "1.3.21",
+
+            RecyclerViewAdapterHelper: "2.9.30",
+
+            anKo                     : "0.10.8",
+
+            rxjava1                  : '1.3.0',
+            rxandroid1               : '1.2.1',
+
+            rxjava2                  : '2.2.6',
+            rxandroid2               : '2.1.1',
+
+            retrofit                 : '2.0.2',
+            retrofitRxjava2Adapter   : '2.3.0',
+            retrofitGsonConverter    : '2.0.2',
+            okhttp3                  : '3.11.0',
+            okhttp3Httplogger        : '3.11.0'
+
+    ]
+
+    dependencies = [
+            kotlin                   : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${dependVersion.kotlin}",
+
+            appcompatv7              : "com.android.support:appcompat-v7:${dependVersion.androidSupport}",
+            appcompatv4              : "com.android.support:support-v4:${dependVersion.androidSupport}",
+            design                   : "com.android.support:design:${dependVersion.androidSupport}",
+            constraint               : "com.android.support.constraint:constraint-layout:${dependVersion.constraint}",
+            gridlayout               : "com.android.support:gridlayout-v7:${dependVersion.androidSupport}",
+            cardview                 : "com.android.support:cardview-v7:${dependVersion.androidSupport}",
+            recyclerview             : "com.android.support:recyclerview-v7:${dependVersion.androidSupport}",
+            RecyclerViewAdapterHelper: "com.github.CymChad:BaseRecyclerViewAdapterHelper:${dependVersion.RecyclerViewAdapterHelper}",
+            anKo                     : "org.jetbrains.anko:anko:${dependVersion.anKo}",
+
+            rxjava1                  : "io.reactivex:rxjava:${dependVersion.rxjava1}",
+            rxandroid1               : "io.reactivex:rxandroid:${dependVersion.rxandroid1}",
+
+            rxjava2                  : "io.reactivex.rxjava2:rxjava:${dependVersion.rxjava2}",
+            rxandroid2               : "io.reactivex.rxjava2:rxandroid:${dependVersion.rxandroid2}",
+
+            retrofit                 : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit}",
+            okhttp3                  : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp3}",
+            okhttp3Httplogger        : "com.squareup.okhttp3:logging-interceptor:${dependVersion.okhttp3Httplogger}",
+            retrofitrxjava2adapter   : "com.squareup.retrofit2:adapter-rxjava2:${dependVersion.retrofitRxjava2Adapter}",
+            retrofitGsonConverter    : "com.squareup.retrofit2:converter-gson:${dependVersion.retrofitGsonConverter}"
+    ]
+}
